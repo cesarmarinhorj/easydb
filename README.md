@@ -1,66 +1,95 @@
 # easydb
+
 Easy oriented objects encrypted databse
+
 # How to install
+
 ```sh
 $ npm install easydb
 ```
+
 # How to use
+
 ```javascript
 var easydb = require("easydb");
 var db = new easydb(file, password)
 //If file doesn't exists, It will be created.
 ```
+
 - **file**: string
 - **password (optional)**: string
+
 # Create Group
+
 ```javascript
 //Groups are like tables in a SQL database
 db.createGroup(group)
 // If group doesn't exists, It will be created.
 ```
+
 - **group**: string
+
 # Delete Group
+
 ```javascript
 db.deleteGroup(group)
 ```
+
 - **group**: string
+
 # Rename Group
+
 ```javascript
 db.renameGroup(oldName, newName)
 ```
+
 - **oldName**: string
 - **newName**: string
+
 # Insert data
+
 ```javascript
 db.insert(group, data)
 //If group doesn't exists, It will be created.
 ```
+
 - **group**: string
 - **data**: any type of data
+
 # Select data
+
 ```javascript
 var dataArray = db.select(group, where)
 //It returns an array of data. Setting
 //Setting where to "$", it will return all data
 ```
+
 - **group**: string
 - **where**: string or function (See linq.js: [linq.js])
+
 # Delete data
+
 ```javascript
 db.delete(group, where)
 //Setting where to "$", it will delete all data
 ```
+
 - **group**: string
 - **where**: string or function (See linq.js: [linq.js])
+
 # Update data
+
 ```javascript
 db.update(group, where, data)
 //Setting where to "$", it will update all data
 ```
+
 - **group**: string
 - **where**: string or function (See linq.js: [linq.js])
 - **data**: any type of data (See linq.js: [linq.js])
+
 # Examples
+
 ```javascript
 var easydb = require("easydb")
 var db = new easydb("mybase", "mypassword")
@@ -94,4 +123,5 @@ db.update("people", "$.age > 25", function(x){
 /*Delete data*/
 db.delete("people", "$.id == 1")
 ```
+
 [linq.js]: <https://linqjs.codeplex.com>
