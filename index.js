@@ -60,8 +60,6 @@ module.exports = function(file, password){
 	}
 	this.insert = function(group, item){
 		var obj = this.parse()
-		if(obj[group] == undefined)
-			this.createGroup(group)
 		if(item.id == "#"){
 			obj[group].lastId++
 			item.id = obj[group].lastId
