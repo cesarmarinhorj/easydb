@@ -1,6 +1,6 @@
 {
   "name": "easydb",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Easy oriented objects encrypted databse",
   "main": "index.js",
   "scripts": {
@@ -18,10 +18,13 @@
     "oriented objects",
     "encrypted"
   ],
-  "author": "Samuel Novaes Sena",
+  "author": {
+    "name": "Samuel Novaes Sena"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/samuelnovaes/easydb/issues"
   },
-  "homepage": "https://github.com/samuelnovaes/easydb#readme"
+  "homepage": "https://github.com/samuelnovaes/easydb#readme",
+  "readmeFilename": "README.md"
 }
