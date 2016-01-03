@@ -50,7 +50,6 @@ db.renameGroup(oldName, newName)
 
 ```javascript
 db.insert(group, data)
-//If group doesn't exists, It will be created.
 ```
 
 - **group**: string
@@ -106,7 +105,7 @@ db.renameGroup("students", "people")
 
 /*Insert data*/
 db.insert("people", {id: "#", name: "Samuel Novaes", age: 19, occupation: "student"})
-//Creating a property called "id" and setting your value to "#", we have auto increment
+//Creating a property called "id" and setting its value to "#", we have an auto increment
 
 /*Select data*/
 var people = db.select("people", "$.age < 20")
