@@ -1,6 +1,6 @@
 {
   "name": "easydb",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easy oriented objects encrypted databse",
   "main": "index.js",
   "scripts": {
