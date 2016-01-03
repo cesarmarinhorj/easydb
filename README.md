@@ -13,7 +13,7 @@ $ npm install easydb
 ```javascript
 var easydb = require("easydb");
 var db = new easydb(file, password)
-//If file doesn't exists, It will be created.
+//If file doesn't exist, It will be created.
 ```
 
 - **file**: string
@@ -24,7 +24,7 @@ var db = new easydb(file, password)
 ```javascript
 //Groups are like tables in a SQL database
 db.createGroup(group)
-//The group will only be created if it doesn't exists
+//The group will only be created if it doesn't exist
 ```
 
 - **group**: string
