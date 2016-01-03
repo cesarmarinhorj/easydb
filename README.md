@@ -24,6 +24,7 @@ var db = new easydb(file, password)
 ```javascript
 //Groups are like tables in a SQL database
 db.createGroup(group)
+//The group will only be created if it doesn't exists
 ```
 
 - **group**: string
